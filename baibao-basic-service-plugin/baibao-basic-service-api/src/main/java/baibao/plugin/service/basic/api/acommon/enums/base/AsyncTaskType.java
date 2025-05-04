@@ -1,4 +1,4 @@
-package baibao.plugin.service.basic.api.task.acommon.enums.base;
+package baibao.plugin.service.basic.api.acommon.enums.base;
 
 import kunlun.data.CodeDefinition;
 

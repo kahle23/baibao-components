@@ -1,7 +1,7 @@
 package baibao.plugin.service.basic.api.task.pojo.param;
 
-import baibao.plugin.service.basic.api.task.acommon.enums.base.AsyncTaskType;
-import baibao.plugin.service.basic.api.task.acommon.enums.base.AsyncTaskStatus;
+import baibao.plugin.service.basic.api.acommon.enums.base.AsyncTaskType;
+import baibao.plugin.service.basic.api.acommon.enums.base.AsyncTaskStatus;
 import kunlun.core.annotation.FieldMeta;
 import lombok.Data;
 import lombok.NoArgsConstructor;

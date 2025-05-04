@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="baibao.plugin.service.basic.provider.log.mapper.ChangeLogMapper" >
+
+    <!-- **** (Start) This will be overridden, please do not modify. **** -->
+    <resultMap id="BaseResultMap" type="baibao.plugin.service.basic.api.log.pojo.entity.ChangeLog" >
+        <id column="id" property="id" />
+        <result column="time" property="time" />
+        <result column="user_id" property="userId" />
+        <result column="user_type" property="userType" />
+        <result column="user_display_name" property="userDisplayName" />
+        <result column="org_id" property="orgId" />
+        <result column="org_name" property="orgName" />
+        <result column="platform" property="platform" />
+        <result column="tenant_id" property="tenantId" />
+        <result column="business_id" property="businessId" />
+        <result column="business_type" property="businessType" />
+        <result column="message" property="message" />
+        <result column="server_name" property="serverName" />
+        <result column="server_app_name" property="serverAppName" />
+        <result column="data_json" property="dataJson" />
+        <result column="delete_status" property="deleteStatus" />
+    </resultMap>
+
+    <sql id="Base_Column_List" >
+        `id`,
+        `time`,
+        `user_id`,
+        `user_type`,
+        `user_display_name`,
+        `org_id`,
+        `org_name`,
+        `platform`,
+        `tenant_id`,
+        `business_id`,
+        `business_type`,
+        `message`,
+        `server_name`,
+        `server_app_name`,
+        `data_json`,
+        `delete_status`
+    </sql>
+
+    <sql id="Base_Selective_Where" >
+        <if test="id != null and id != ''">and `id` = #{id}</if>
+        <if test="time != null">and `time` = #{time}</if>
+        <if test="userId != null and userId != ''">and `user_id` = #{userId}</if>
+        <if test="userType != null and userType != ''">and `user_type` = #{userType}</if>
+        <if test="userDisplayName != null and userDisplayName != ''">and `user_display_name` = #{userDisplayName}</if>
+        <if test="orgId != null and orgId != ''">and `org_id` = #{orgId}</if>
+        <if test="orgName != null and orgName != ''">and `org_name` = #{orgName}</if>
+        <if test="platform != null and platform != ''">and `platform` = #{platform}</if>
+        <if test="tenantId != null and tenantId != ''">and `tenant_id` = #{tenantId}</if>
+        <if test="businessId != null and businessId != ''">and `business_id` = #{businessId}</if>
+        <if test="businessType != null">and `business_type` = #{businessType}</if>
+        <if test="message != null and message != ''">and `message` = #{message}</if>
+        <if test="serverName != null and serverName != ''">and `server_name` = #{serverName}</if>
+        <if test="serverAppName != null and serverAppName != ''">and `server_app_name` = #{serverAppName}</if>
+        <if test="dataJson != null and dataJson != ''">and `data_json` = #{dataJson}</if>
+        <if test="deleteStatus != null">and `delete_status` = #{deleteStatus}</if>
+    </sql>
+    <!-- **** (End) This will be overridden, please do not modify. **** -->
+
+</mapper>
