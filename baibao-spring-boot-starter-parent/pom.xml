@@ -7,8 +7,8 @@
     <artifactId>baibao-spring-boot-starter-parent</artifactId>
     <version>1.0.3</version>
     <packaging>pom</packaging>
-    <name>BaiBao Spring Boot Starter Parent</name>
-    <url>https://github.com/kahle23/baibao-dependencies</url>
+    <name>baibao-spring-boot-starter-parent</name>
+    <url>https://github.com/kahle23/baibao-components</url>
     <description>百宝的基于 Spring Boot 的核心的项目统一依赖管理.</description>
 
     <parent>

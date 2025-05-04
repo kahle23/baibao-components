@@ -6,8 +6,8 @@
     <artifactId>baibao-spring-boot-specific-parent</artifactId>
     <version>1.0.3</version>
     <packaging>pom</packaging>
-    <name>BaiBao Spring Boot Specific Parent</name>
-    <url>https://github.com/kahle23/baibao-dependencies</url>
+    <name>baibao-spring-boot-specific-parent</name>
+    <url>https://github.com/kahle23/baibao-components</url>
     <description>百宝的基于 Spring Boot + MyBatis Plus 的特定方向的项目统一依赖管理.</description>
 
     <parent>

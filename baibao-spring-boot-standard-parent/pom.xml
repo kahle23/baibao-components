@@ -6,8 +6,8 @@
     <artifactId>baibao-spring-boot-standard-parent</artifactId>
     <version>1.0.3</version>
     <packaging>pom</packaging>
-    <name>BaiBao Spring Boot Standard Parent</name>
-    <url>https://github.com/kahle23/baibao-dependencies</url>
+    <name>baibao-spring-boot-standard-parent</name>
+    <url>https://github.com/kahle23/baibao-components</url>
     <description>百宝的基于 Spring Boot + MyBatis Plus 的标准的项目统一依赖管理.</description>
 
     <parent>
@@ -43,7 +43,7 @@
         <!-- ////////////////////////////// -->
 
         <!-- ********** 核心的依赖 ********** -->
-        <baibao.version>1.0.0.24520b</baibao.version>
+        <baibao.version>1.0.17</baibao.version>
         <lombok.version>1.18.22</lombok.version>
         <bcprov-jdk15on.version>1.67</bcprov-jdk15on.version>
         <transmittable-thread-local.version>2.12.6</transmittable-thread-local.version>
