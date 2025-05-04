@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="baibao.plugin.service.basic.provider.task.mapper.AsyncProcTaskMapper" >
+
+    <!-- **** (Start) This will be overridden, please do not modify. **** -->
+    <resultMap id="BaseResultMap" type="baibao.plugin.service.basic.api.task.pojo.entity.AsyncProcTask" >
+        <id column="id" property="id" />
+        <result column="business_type" property="businessType" />
+        <result column="business_id" property="businessId" />
+        <result column="task_type" property="taskType" />
+        <result column="task_parameters" property="taskParameters" />
+        <result column="begin_time" property="beginTime" />
+        <result column="end_time" property="endTime" />
+        <result column="original_files" property="originalFiles" />
+        <result column="original_filename" property="originalFilename" />
+        <result column="status" property="status" />
+        <result column="executor_name" property="executorName" />
+        <result column="exec_failure_count" property="execFailureCount" />
+        <result column="success_count" property="successCount" />
+        <result column="failure_count" property="failureCount" />
+        <result column="total_count" property="totalCount" />
+        <result column="result_file" property="resultFile" />
+        <result column="error_message" property="errorMessage" />
+        <result column="platform" property="platform" />
+        <result column="tenant_id" property="tenantId" />
+        <result column="owner_id" property="ownerId" />
+        <result column="own_org_id" property="ownOrgId" />
+        <result column="create_user" property="createUser" />
+        <result column="create_time" property="createTime" />
+        <result column="modify_user" property="modifyUser" />
+        <result column="modify_time" property="modifyTime" />
+        <result column="delete_status" property="deleteStatus" />
+    </resultMap>
+
+    <sql id="Base_Column_List" >
+        `id`,
+        `business_type`,
+        `business_id`,
+        `task_type`,
+        `task_parameters`,
+        `begin_time`,
+        `end_time`,
+        `original_files`,
+        `original_filename`,
+        `status`,
+        `executor_name`,
+        `exec_failure_count`,
+        `success_count`,
+        `failure_count`,
+        `total_count`,
+        `result_file`,
+        `error_message`,
+        `platform`,
+        `tenant_id`,
+        `owner_id`,
+        `own_org_id`,
+        `create_user`,
+        `create_time`,
+        `modify_user`,
+        `modify_time`,
+        `delete_status`
+    </sql>
+
+    <sql id="Base_Selective_Where" >
+        <if test="id != null and id != ''">and `id` = #{id}</if>
+        <if test="businessType != null">and `business_type` = #{businessType}</if>
+        <if test="businessId != null and businessId != ''">and `business_id` = #{businessId}</if>
+        <if test="taskType != null">and `task_type` = #{taskType}</if>
+        <if test="taskParameters != null and taskParameters != ''">and `task_parameters` = #{taskParameters}</if>
+        <if test="beginTime != null">and `begin_time` = #{beginTime}</if>
+        <if test="endTime != null">and `end_time` = #{endTime}</if>
+        <if test="originalFiles != null and originalFiles != ''">and `original_files` = #{originalFiles}</if>
+        <if test="originalFilename != null and originalFilename != ''">and `original_filename` = #{originalFilename}</if>
+        <if test="status != null">and `status` = #{status}</if>
+        <if test="executorName != null and executorName != ''">and `executor_name` = #{executorName}</if>
+        <if test="execFailureCount != null">and `exec_failure_count` = #{execFailureCount}</if>
+        <if test="successCount != null">and `success_count` = #{successCount}</if>
+        <if test="failureCount != null">and `failure_count` = #{failureCount}</if>
+        <if test="totalCount != null">and `total_count` = #{totalCount}</if>
+        <if test="resultFile != null and resultFile != ''">and `result_file` = #{resultFile}</if>
+        <if test="errorMessage != null and errorMessage != ''">and `error_message` = #{errorMessage}</if>
+        <if test="platform != null and platform != ''">and `platform` = #{platform}</if>
+        <if test="tenantId != null and tenantId != ''">and `tenant_id` = #{tenantId}</if>
+        <if test="ownerId != null and ownerId != ''">and `owner_id` = #{ownerId}</if>
+        <if test="ownOrgId != null and ownOrgId != ''">and `own_org_id` = #{ownOrgId}</if>
+        <if test="createUser != null and createUser != ''">and `create_user` = #{createUser}</if>
+        <if test="createTime != null">and `create_time` = #{createTime}</if>
+        <if test="modifyUser != null and modifyUser != ''">and `modify_user` = #{modifyUser}</if>
+        <if test="modifyTime != null">and `modify_time` = #{modifyTime}</if>
+        <if test="deleteStatus != null">and `delete_status` = #{deleteStatus}</if>
+    </sql>
+    <!-- **** (End) This will be overridden, please do not modify. **** -->
+
+</mapper>

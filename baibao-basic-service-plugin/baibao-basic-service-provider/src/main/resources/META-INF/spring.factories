@@ -1,0 +1,8 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+taihong.customer.conn.provider.acommon.PluginScanAutoConfiguration
+
+
+
+
+
+
