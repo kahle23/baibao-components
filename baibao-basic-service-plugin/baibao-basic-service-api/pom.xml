@@ -25,6 +25,20 @@
         <baibao.version>1.0.20</baibao.version>
     </properties>
 
+    <distributionManagement>
+
+        <snapshotRepository>
+            <id>2001028-snapshot-E0xwVE</id>
+            <url>https://packages.aliyun.com/5ea4822bf89c9700014a5d6b/maven/2001028-snapshot-e0xwve</url>
+        </snapshotRepository>
+
+        <repository>
+            <id>2001028-release-VFcx3p</id>
+            <url>https://packages.aliyun.com/5ea4822bf89c9700014a5d6b/maven/2001028-release-vfcx3p</url>
+        </repository>
+
+    </distributionManagement>
+
     <dependencies>
     </dependencies>
 
